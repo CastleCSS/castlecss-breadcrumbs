@@ -1,0 +1,25 @@
+.castlecss-breadcrumbs{
+	
+	.breadcrumb-wrap {
+		display: block;		
+
+		.breadcrumb {
+			display: inline;
+			white-space: nowrap;
+
+			&:after {
+				display: inline;
+				content: '\00bb';
+				color: $theme01;
+			}
+			&.breadcrumb-current {
+				
+				&:after {
+					content:"";
+				}
+			}
+		}
+
+	}
+}
+

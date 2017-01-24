@@ -1,0 +1,19 @@
+{
+  "name": "castlecss-breadcrumbs",
+  "version": "0.1.0",
+  "description": "Breadcrumbs for CastleCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CastleCSS/castlecss-breadcrumbs.git"
+  },
+  "author": "Pascal Alferink",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CastleCSS/castlecss-breadcrumbs/issues"
+  },
+  "homepage": "https://github.com/CastleCSS/castlecss-breadcrumbs#readme"
+}
