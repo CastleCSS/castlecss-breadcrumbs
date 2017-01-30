@@ -1,4 +1,4 @@
-.castlecss-breadcrumbs {
+.breadcrumbs {
 	font-size: 1.4rem;
 }	
 
@@ -13,8 +13,8 @@
 	&:after {
 		display: inline;
 		
-		@if variable-exists(castlecss-breadcrumbs-separator) {
-			content: $castlecss-breadcrumbs-separator; // default separator character between crumbs.
+		@if variable-exists(breadcrumbs-separator) {
+			content: $breadcrumbs-separator; // default separator character between crumbs.
 		}
 	}
 	&.breadcrumb-current {
@@ -23,10 +23,10 @@
 			content:"";
 		}
 	}
-	&[data-castlecss-breadcrumbs-separator] {
+	&[data-breadcrumbs-separator] {
 
 		&:after {
-			content: attr(data-castlecss-breadcrumbs-separator); // specific separator character. Will be shown when the attribute 'data-separator' is added to a list-item
+			content: attr(data-breadcrumbs-separator); // specific separator character. Will be shown when the attribute 'data-separator' is added to a list-item
 		}
 	}
 }
