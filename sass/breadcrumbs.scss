@@ -1,25 +1,43 @@
-.castlecss-breadcrumbs{
-	
-	.breadcrumb-wrap {
-		display: block;		
-
-		.breadcrumb {
-			display: inline;
-			white-space: nowrap;
-
-			&:after {
-				display: inline;
-				content: '\00bb';
-				color: $theme01;
-			}
-			&.breadcrumb-current {
-				
-				&:after {
-					content:"";
-				}
-			}
-		}
-
-	}
+.breadcrumbs {
+	font-size: $font-size-default;
 }
 
+.breadcrumbs-small {
+	@extend .breadcrumbs;
+	font-size: 1.4rem;
+}
+
+.breadcrumbs-wrap {
+	display: block;	
+}	
+
+.breadcrumb {
+	display: inline;
+	white-space: nowrap;
+
+	&:after {
+		display: inline;
+		
+		@if variable-exists(breadcrumbs-separator) {
+			// default separator character between crumbs.
+			content: $breadcrumbs-separator; 
+		} @else {
+			content: "\00bb";
+		}
+	}
+	&.breadcrumb-current {
+		pointer-events: none;
+		color: $disabled;
+		
+		&:after {
+			content:"";
+		}
+	}
+	&[data-breadcrumbs-separator] {
+
+		&:after {
+			// specific separator character. Will be shown when the attribute 'data-separator' is added to a list-item
+			content: attr(data-breadcrumbs-separator);
+		}
+	}
+}
