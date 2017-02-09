@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/CastleCSS/castlecss-breadcrumbs#readme",
   "devDependencies": {
-    "castlecss-core": "^2.1.0"
+    "castlecss-core": "^2.2.0"
   }
 }
