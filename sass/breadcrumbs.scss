@@ -19,7 +19,10 @@
 		display: inline;
 		
 		@if variable-exists(breadcrumbs-separator) {
-			content: $breadcrumbs-separator; // default separator character between crumbs.
+			// default separator character between crumbs.
+			content: $breadcrumbs-separator; 
+		} @else {
+			content: "\00bb";
 		}
 	}
 	&.breadcrumb-current {
@@ -33,7 +36,8 @@
 	&[data-breadcrumbs-separator] {
 
 		&:after {
-			content: attr(data-breadcrumbs-separator); // specific separator character. Will be shown when the attribute 'data-separator' is added to a list-item
+			// specific separator character. Will be shown when the attribute 'data-separator' is added to a list-item
+			content: attr(data-breadcrumbs-separator);
 		}
 	}
 }
