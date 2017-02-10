@@ -1,6 +1,6 @@
 {
   "name": "castlecss-breadcrumbs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Breadcrumbs for CastleCSS",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,12 @@
     "url": "git+https://github.com/CastleCSS/castlecss-breadcrumbs.git"
   },
   "author": "Pascal Alferink",
+  "contributors": [
+    {
+      "name": "Darius Rosendahl",
+      "email": "darius@denieuwezaak.nl"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/CastleCSS/castlecss-breadcrumbs/issues"

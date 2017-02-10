@@ -1,5 +1,10 @@
 .breadcrumbs {
 	font-size: $font-size-default;
+
+	// For setting text next to breadcrumbs
+	> * {
+		display: inline-block;
+	}
 }
 
 .breadcrumbs-small {
@@ -8,8 +13,8 @@
 }
 
 .breadcrumbs-wrap {
-	display: block;	
-}	
+	display: block;
+}
 
 .breadcrumb {
 	display: inline;
@@ -25,6 +30,7 @@
 			content: "\00bb";
 		}
 	}
+
 	&.breadcrumb-current {
 		pointer-events: none;
 		color: $disabled;
@@ -33,6 +39,7 @@
 			content:"";
 		}
 	}
+
 	&[data-breadcrumbs-separator] {
 
 		&:after {
