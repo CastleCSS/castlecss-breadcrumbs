@@ -22,13 +22,7 @@
 
 	&:after {
 		display: inline;
-		
-		@if variable-exists(breadcrumbs-separator) {
-			// default separator character between crumbs.
-			content: $breadcrumbs-separator; 
-		} @else {
-			content: "\00bb";
-		}
+		content: $breadcrumbs-separator;
 	}
 
 	&.breadcrumb-current {
