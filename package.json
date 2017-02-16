@@ -1,6 +1,6 @@
 {
   "name": "castlecss-breadcrumbs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Breadcrumbs for CastleCSS",
   "main": "index.js",
   "scripts": {
